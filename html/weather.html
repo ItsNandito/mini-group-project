@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+
+
+<body>
+
+
+  <header>
+    <h2 class="brand">Weather Forecast</h2>
+    <nav>
+      <a href="/index.html">Home</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+      <a href="#">Blog</a>
+    </nav>
+  </header>
+
+
+
+
+
+  <div class="container">
+    <div class="weather-app">
+
+
+      <h1 class="temp">80&#176;</h1>
+      <div class="city-time">
+        <h1 class="name">New York</h1>
+        <small>
+          <span class="time">06:09</span>
+
+          <span class="date">12.01.2022</span>
+        </small>
+      </div>
+      <div class="weather">
+        <img src="/imgs/64x64/day/113.png" class="icon" alt="icon" width="50" height="50">
+      </div>
+    </div>
+    <div class="panel">
+      <select name="City" id="City" onChange="getCity()">
+        <option selected disabled hidden>Search by City</option>
+      </select>
+
+      <table id="table">
+        <thead id="tableHead">
+        </thead>
+
+        <tbody id="tableBody">
+
+        </tbody>
+
+      </table>
+    </div>
+  </div>
+  </div>
+
+
+
+
+
+  <footer>
+    <ul class="social">
+      <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+      <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+      <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+    </ul>
+  </footer>
+</body>
+
+</html>
