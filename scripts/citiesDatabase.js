@@ -1,4 +1,4 @@
-export cityDatabase = [
+export let  cityDatabase = [
     {
         name: "Tampa, FL",
         latitude: 27.995776,
