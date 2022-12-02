@@ -26,3 +26,10 @@ document.getElementById("city").addEventListener("change", function () {
     cityList.appendChild(tableHeadTag);
   }
 });
+
+// display City name
+select.addEventListener("change", function () {
+  let myIndex = select.options[select.selectedIndex].index;
+  let name = document.getElementById("time-zone");
+  name.innerHTML = cityDatabase[myIndex].name;
+});

@@ -90,7 +90,7 @@ h1 {
 .current-info .others {
   display: flex;
   flex-direction: column;
-  background: rgba(24, 24, 27, 0.6);
+  background: rgba(93, 93, 123, 0.6);
   padding: 20px;
   border-radius: 10px;
   margin: 10px 0;
@@ -124,7 +124,7 @@ h1 {
   padding: 15px;
   padding-right: 40px;
   border-radius: 10px;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(93, 93, 123, 0.3);
 }
 
 .future-forecast .today .day {
@@ -152,7 +152,7 @@ h1 {
   border: 1px solid #eee;
   padding: 15px;
   border-radius: 10px;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(93, 93, 123, 0.3);
 }
 
 .weather-forecast .weather-forecast-item .day {
