@@ -15,12 +15,11 @@
 
 
   <header>
-    <h2 class="brand">Weather Forecast</h2>
+    <!-- <h2 class="brand">Weather Forecast</h2> -->
     <nav>
       <a href="/index.html">Home</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-      <a href="#">Blog</a>
+      <a href="#">Weather</a>
+
     </nav>
   </header>
 
@@ -29,51 +28,105 @@
 
 
   <div class="container">
-    <div class="weather-app">
 
+    <div class="current-info">
 
-      <h1 class="temp">80&#176;</h1>
-      <div class="city-time">
-        <h1 class="name">New York</h1>
-        <small>
-          <span class="time">06:09</span>
+      <div class="date-container">
+        <div class="time" id="time">
+          <span id="am-pm"></span>
+        </div>
+        <div class="date" id="date">
 
-          <span class="date">12.01.2022</span>
-        </small>
+        </div>
+
+        <div class="others" id="current-weather-items">
+          <select name="City" id="City" onChange="getCity()">
+            <option selected disabled hidden>Search by City</option>
+          </select>
+
+        </div>
       </div>
-      <div class="weather">
-        <img src="/imgs/64x64/day/113.png" class="icon" alt="icon" width="50" height="50">
+
+      <!-- -------need function for to display city name in here----- -->
+      <div class="place-container">
+        <div class="time-zone" id="time-zone">Pittsburgh/PA</div>
+        <div id="country" class="country">USA</div>
       </div>
-    </div>
-    <div class="panel">
-      <select name="City" id="City" onChange="getCity()">
-        <option selected disabled hidden>Search by City</option>
-      </select>
-
-      <table id="table">
-        <thead id="tableHead">
-        </thead>
-
-        <tbody id="tableBody">
-
-        </tbody>
-
-      </table>
-    </div>
-  </div>
-  </div>
 
 
 
 
+      <div class="future-forecast">
+        <div class="today" id="current-temp">
+          <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+          <div class="other">
+            <div class="day">Monday</div>
+            <div class="temp">Night - 25.6&#176; C</div>
+            <div class="temp">Day - 35.6&#176; C</div>
+          </div>
+        </div>
 
-  <footer>
-    <ul class="social">
-      <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
-      <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
-      <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
-    </ul>
-  </footer>
+
+        <!------------------display output in here------------------  -->
+        <div class="weather-forecast" id="weather-forecast">
+          <div class="weather-forecast-item">
+            <div class="day">Tue</div>
+            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+            <div class="temp">Night - 25.6&#176; C</div>
+            <div class="temp">Day - 35.6&#176; C</div>
+          </div>
+          <div class="weather-forecast-item">
+            <div class="day">Wed</div>
+            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+            <div class="temp">Night - 25.6&#176; C</div>
+            <div class="temp">Day - 35.6&#176; C</div>
+          </div>
+          <div class="weather-forecast-item">
+            <div class="day">Thur</div>
+            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+            <div class="temp">Night - 25.6&#176; C</div>
+            <div class="temp">Day - 35.6&#176; C</div>
+          </div>
+          <div class="weather-forecast-item">
+            <div class="day">Fri</div>
+            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+            <div class="temp">Night - 25.6&#176; C</div>
+            <div class="temp">Day - 35.6&#176; C</div>
+          </div>
+          <div class="weather-forecast-item">
+            <div class="day">Sat</div>
+            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+            <div class="temp">Night - 25.6&#176; C</div>
+            <div class="temp">Day - 35.6&#176; C</div>
+          </div>
+          <div class="weather-forecast-item">
+            <div class="day">Sun</div>
+            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+            <div class="temp">Night - 25.6&#176; C</div>
+            <div class="temp">Day - 35.6&#176; C</div>
+          </div>
+
+        </div>
+
+
+
+
+      </div>
+
+
+
+
+
+      <!-- 
+      <footer>
+        <ul class="social">
+          <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
+          <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
+          <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
+        </ul>
+      </footer> -->
+
+      <script src="/scripts/time.js"></script>
 </body>
 
 </html>
