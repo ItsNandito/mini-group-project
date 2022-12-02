@@ -40,7 +40,7 @@
         </div>
 
         <div class="others" id="current-weather-items">
-          <select name="City" id="City" onChange="getCity()">
+          <select name="City" id="city">
             <option selected disabled hidden>Search by City</option>
           </select>
 
@@ -71,7 +71,7 @@
         <div class="weather-forecast" id="weather-forecast">
           <div class="weather-forecast-item">
             <div class="day">Tue</div>
-            <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+            <img src="/imgs/64x64/day/113.png" alt="weather icon" class="w-icon">
             <div class="temp">Night - 25.6&#176; C</div>
             <div class="temp">Day - 35.6&#176; C</div>
           </div>
@@ -117,16 +117,12 @@
 
 
 
-      <!-- 
-      <footer>
-        <ul class="social">
-          <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png"></a></li>
-          <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png"></a></li>
-          <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png"></a></li>
-        </ul>
-      </footer> -->
 
+      <script src="/scripts/cities.js" type="module"></script>
+      <script src="/scripts/citiesDatabase.js"></script>
       <script src="/scripts/time.js"></script>
+
+
 </body>
 
 </html>
