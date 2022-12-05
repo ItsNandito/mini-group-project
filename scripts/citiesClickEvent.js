@@ -60,7 +60,6 @@ document.getElementById('city').addEventListener("change", function () {
 
                                 // -----------Displaying data to website
 
-                                // declarying all variables
 
                                 // let mainWeatherBody = document.getElementsByClassName('future-forecast');
                                 // let imgbody = document.getElementsByClassName('w-icon');
@@ -70,6 +69,9 @@ document.getElementById('city').addEventListener("change", function () {
                                 // let weatherpng = document.createElement('img');
                                 // let currentDay = document.createElement('div');
 
+                                //I will be calling every weather card manually and giving it data
+                                
+                                //Day1
                                 let todayDate = document.getElementById('day1');
                                 let todayWeatherDay = document.getElementById('day1-day');
                                 let todayWeatherNight = document.getElementById('day1-night');
@@ -80,6 +82,7 @@ document.getElementById('city').addEventListener("change", function () {
                                 todayWeatherNight.innerHTML = `${forecastArray[1].temperature}&#176; F`;
                                 //  todayWeatherPng.setAttribute('src', forecastArray[0].icon)
 
+                                //Day2
                                 let day2Name = document.getElementById('day2');
                                 let day2WeatherDay = document.getElementById('day2-day');
                                 let day2WeatherNight = document.getElementById('day2-night');
@@ -90,6 +93,7 @@ document.getElementById('city').addEventListener("change", function () {
                                 day2WeatherNight.innerHTML = `${forecastArray[3].temperature}&#176; F`;
                                 //  day2WeatherPng.setAttribute('src', forecastArray[2].icon)
 
+                                //Day3
                                 let day3Name = document.getElementById('day3');
                                 let day3WeatherDay = document.getElementById('day3-day');
                                 let day3WeatherNight = document.getElementById('day3-night');
@@ -100,6 +104,7 @@ document.getElementById('city').addEventListener("change", function () {
                                 day3WeatherNight.innerHTML = `${forecastArray[5].temperature}&#176; F`;
                                 //  day3WeatherPng.setAttribute('src', forecastArray[4].icon)
 
+                                // Day4
                                 let day4Name = document.getElementById('day4');
                                 let day4WeatherDay = document.getElementById('day4-day');
                                 let day4WeatherNight = document.getElementById('day4-night');
@@ -110,6 +115,7 @@ document.getElementById('city').addEventListener("change", function () {
                                 day4WeatherNight.innerHTML = `${forecastArray[7].temperature}&#176; F`;
                                 //  day4WeatherPng.setAttribute('src', forecastArray[6].icon)
 
+                                // Day5
                                 let day5Name = document.getElementById('day5');
                                 let day5WeatherDay = document.getElementById('day5-day');
                                 let day5WeatherNight = document.getElementById('day5-night');
@@ -120,6 +126,7 @@ document.getElementById('city').addEventListener("change", function () {
                                 day5WeatherNight.innerHTML = `${forecastArray[9].temperature}&#176; F`;
                                 //  day5WeatherPng.setAttribute('src', forecastArray[8].icon)
 
+                                // Day6
                                 let day6Name = document.getElementById('day6');
                                 let day6WeatherDay = document.getElementById('day6-day');
                                 let day6WeatherNight = document.getElementById('day6-night');
@@ -130,6 +137,7 @@ document.getElementById('city').addEventListener("change", function () {
                                 day6WeatherNight.innerHTML = `${forecastArray[11].temperature}&#176; F`;
                                 //  day6WeatherPng.setAttribute('src', forecastArray[10].icon)
 
+                                // Day 7
                                 let day7Name = document.getElementById('day7');
                                 let day7WeatherDay = document.getElementById('day7-day');
                                 let day7WeatherNight = document.getElementById('day7-night');
