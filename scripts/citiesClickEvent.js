@@ -18,6 +18,9 @@ document.getElementById('city').addEventListener("change", function () {
         if (cityDatabase.name === selectedOptions) {
         } return selectedOptions === cityDatabase.name;
     }); console.log(citiesFiltered);
+
+    let selectedcity = document.getElementById('citySelected');
+    selectedcity.innerHTML = selectedOptions;
 /*     let cityList = document.getElementById('table')
     for (let i = 0; i < citiesFiltered.length; i++) {
         tableHeadTag = document.getElementById('tableHead');
@@ -75,7 +78,7 @@ document.getElementById('city').addEventListener("change", function () {
                                 todayDate.innerHTML = forecastArray[0].name;
                                 todayWeatherDay.innerHTML = `${forecastArray[0].temperature}&#176; F`;
                                 todayWeatherNight.innerHTML = `${forecastArray[1].temperature}&#176; F`;
-                                // todayWeatherPng.setAttribute('src', forecastArray[0].icon)
+                                //  todayWeatherPng.setAttribute('src', forecastArray[0].icon)
 
                                 let day2Name = document.getElementById('day2');
                                 let day2WeatherDay = document.getElementById('day2-day');
@@ -85,7 +88,7 @@ document.getElementById('city').addEventListener("change", function () {
                                 day2Name.innerHTML = forecastArray[2].name;
                                 day2WeatherDay.innerHTML = `${forecastArray[2].temperature}&#176; F`;
                                 day2WeatherNight.innerHTML = `${forecastArray[3].temperature}&#176; F`;
-                                // day2WeatherPng.setAttribute('src', forecastArray[2].icon)
+                                //  day2WeatherPng.setAttribute('src', forecastArray[2].icon)
 
                                 let day3Name = document.getElementById('day3');
                                 let day3WeatherDay = document.getElementById('day3-day');
@@ -95,7 +98,7 @@ document.getElementById('city').addEventListener("change", function () {
                                 day3Name.innerHTML = forecastArray[4].name;
                                 day3WeatherDay.innerHTML = `${forecastArray[4].temperature}&#176; F`;
                                 day3WeatherNight.innerHTML = `${forecastArray[5].temperature}&#176; F`;
-                                // day3WeatherPng.setAttribute('src', forecastArray[4].icon)
+                                //  day3WeatherPng.setAttribute('src', forecastArray[4].icon)
 
                                 let day4Name = document.getElementById('day4');
                                 let day4WeatherDay = document.getElementById('day4-day');
@@ -105,7 +108,7 @@ document.getElementById('city').addEventListener("change", function () {
                                 day4Name.innerHTML = forecastArray[6].name;
                                 day4WeatherDay.innerHTML = `${forecastArray[6].temperature}&#176; F`;
                                 day4WeatherNight.innerHTML = `${forecastArray[7].temperature}&#176; F`;
-                                // day4WeatherPng.setAttribute('src', forecastArray[6].icon)
+                                //  day4WeatherPng.setAttribute('src', forecastArray[6].icon)
 
                                 let day5Name = document.getElementById('day5');
                                 let day5WeatherDay = document.getElementById('day5-day');
@@ -115,7 +118,7 @@ document.getElementById('city').addEventListener("change", function () {
                                 day5Name.innerHTML = forecastArray[8].name;
                                 day5WeatherDay.innerHTML = `${forecastArray[8].temperature}&#176; F`;
                                 day5WeatherNight.innerHTML = `${forecastArray[9].temperature}&#176; F`;
-                                // day5WeatherPng.setAttribute('src', forecastArray[8].icon)
+                                //  day5WeatherPng.setAttribute('src', forecastArray[8].icon)
 
                                 let day6Name = document.getElementById('day6');
                                 let day6WeatherDay = document.getElementById('day6-day');
@@ -125,7 +128,7 @@ document.getElementById('city').addEventListener("change", function () {
                                 day6Name.innerHTML = forecastArray[10].name;
                                 day6WeatherDay.innerHTML = `${forecastArray[10].temperature}&#176; F`;
                                 day6WeatherNight.innerHTML = `${forecastArray[11].temperature}&#176; F`;
-                                // day6WeatherPng.setAttribute('src', forecastArray[10].icon)
+                                //  day6WeatherPng.setAttribute('src', forecastArray[10].icon)
 
                                 let day7Name = document.getElementById('day7');
                                 let day7WeatherDay = document.getElementById('day7-day');
@@ -135,7 +138,7 @@ document.getElementById('city').addEventListener("change", function () {
                                 day7Name.innerHTML = forecastArray[12].name;
                                 day7WeatherDay.innerHTML = `${forecastArray[12].temperature}&#176; F`;
                                 day7WeatherNight.innerHTML = `${forecastArray[13].temperature}&#176; F`;
-                                // day7WeatherPng.setAttribute('src', forecastArray[12].icon)
+                                //  day7WeatherPng.setAttribute('src', forecastArray[12].icon)
 
 
 
