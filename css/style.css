@@ -26,12 +26,12 @@ nav {
 }
 
 a:link {
-  color: #1098ad;
+  color: #fff;
   text-decoration: none;
 }
 
 a:visited {
-  color: #1098ad;
+  color: #fff;
 }
 
 a:hover {
@@ -40,12 +40,44 @@ a:hover {
   text-decoration: none;
 }
 
-/* ------------------------- */
+/* ------------dropdown menu------------- */
+.select {
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  color: #fff;
+  margin-top: 25px;
+}
+
+.select select {
+  display: block;
+  width: 250px;
+  min-height: 35px;
+  background: transparent;
+  border-radius: 2px;
+  border: 1px solid white;
+  outline: none;
+  padding: 0 20px 0 10px;
+  margin-top: 5px;
+  cursor: pointer;
+  border-radius: 1em;
+  background-color: rgba(93, 93, 123, 0.6);
+}
+
+select:hover {
+  background-color: rgba(24, 24, 27, 0.4);
+}
+
+option {
+  text-decoration: antiquewhite;
+  color: black;
+}
+
+/* ------------------------------------------------------ */
 
 h1 {
-  font-size: 26px;
-  font-weight: 400;
-  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 150;
 }
 .container {
   padding: 20px 70px;
@@ -75,6 +107,8 @@ h1 {
 
 .place-container {
   text-align: end;
+  color: #fff;
+  margin-right: 15px;
 }
 
 .place-container .time-zone {
@@ -90,7 +124,7 @@ h1 {
 .current-info .others {
   display: flex;
   flex-direction: column;
-  background: rgba(24, 24, 27, 0.6);
+  background: rgba(93, 93, 123, 0.6);
   padding: 20px;
   border-radius: 10px;
   margin: 10px 0;
@@ -103,7 +137,7 @@ h1 {
 }
 
 .future-forecast {
-  background: rgba(24, 24, 27, 0.8);
+  background: rgba(24, 24, 27, 0.4);
   padding: 25px;
   position: fixed;
   bottom: 0;
@@ -124,7 +158,7 @@ h1 {
   padding: 15px;
   padding-right: 40px;
   border-radius: 10px;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(93, 93, 123, 0.3);
 }
 
 .future-forecast .today .day {
@@ -152,7 +186,7 @@ h1 {
   border: 1px solid #eee;
   padding: 15px;
   border-radius: 10px;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(93, 93, 123, 0.3);
 }
 
 .weather-forecast .weather-forecast-item .day {
@@ -167,29 +201,57 @@ h1 {
   font-size: 12px;
 }
 
-/* ---------footer----------------
+/* ------------------ */
+/* ------------------- */
+@media only screen and (max-width: 730px) {
+  .container {
+    padding: 20px;
+  }
 
-.social {
-  position: absolute;
-  z-index: 10;
-  bottom: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  .future-forecast {
+    justify-content: start;
+    align-items: none;
+    overflow-y: scroll;
+  }
+
+  .future-forecast .today .temp {
+    font-size: 16px;
+  }
+
+  .date-container .time {
+    font-size: 50px;
+  }
+
+  .date-container #am-pm {
+    font-size: 20px;
+  }
+
+  .date-container .date {
+    font-size: 20px;
+  }
+
+  .place-container {
+    text-align: end;
+    margin-top: 15px;
+  }
+
+  .place-container .time-zone {
+    font-size: 20px;
+  }
+
+  .current-info .others {
+    padding: 12px;
+  }
+
+  .current-info .others .weather-item {
+    font-size: 14px;
+  }
 }
 
-.social li {
-  list-style: none;
+@media only screen and (max-width: 1400px) {
+  .future-forecast {
+    justify-content: start;
+    align-items: none;
+    overflow-x: scroll;
+  }
 }
-
-.social li a {
-  display: inline-block;
-  margin-right: 20px;
-  filter: invert(1);
-  transform: scale(0.5);
-  transition: 0.5s;
-}
-
-.social li a:hover {
-  transform: scale(0.5) translateY(-15px);
-} */
