@@ -1,3 +1,4 @@
+
 export let cityDatabase = [
     {
         name: "Knoxville, TN",
@@ -50,3 +51,4 @@ export let cityDatabase = [
         longitude: -122.441104
     }
 ]
+
