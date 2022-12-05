@@ -1,8 +1,8 @@
 export let  cityDatabase = [
     {
         name: "Tampa, FL",
-        latitude: 27.995776,
-        longitude: -82.451116
+        latitude: 27.947424,
+        longitude: -82.45878
     },
     {
         name: "Myrtle Beach, SC",
@@ -36,8 +36,8 @@ export let  cityDatabase = [
     },
     {
         name: "Philadlphia, PA",
-        latitude: 27.995776,
-        longitude: -75.163584
+        latitude: 39.952583,
+        longitude: -75.165222
     },
     {
         name: "Central Park, NY",
